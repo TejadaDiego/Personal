@@ -1,0 +1,35 @@
+.background-example{
+    background-color:#f0f8ff;
+    background-image: linear-gradient(to right, rgba(255,0,0,0),
+    rgb(0, 245, 225));
+    background-size: 200% 100%;
+    background-position: left bottom;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    animation: background-animation 5s infinite alternate, border-animation 3s infinite alternate;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+@keyframes background-animation{
+    from{
+        background-position: left bottom;
+    }
+    to{
+        background-position: right bottom;
+    }
+}
+
+@keyframes border-animation{
+    0%{
+        border-color: #ccc;
+    }
+    50%{
+        border-color: #000000;
+    }
+    100%{
+        background-color: #ccc;
+    }
+}

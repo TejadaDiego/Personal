@@ -1,0 +1,53 @@
+.padding-example{
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: lightcoral;
+    background-image: linear-gradient(135deg, rgba(255, 182, 193, 0.5)
+    rgaba(240,128, 128, 0.5)), url('https//example.com/texture.png');
+    background-blend-mode: overlay;
+    border: 3px solid #d3a2a2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #fff;
+    font-family: 'Arial, sans-serif';
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    transition: transfrom 0.5s, box-shadow 0.5s, background-color 0.5s;
+    animation: padding-animation 10s infinite alternate;
+}
+
+.padding-example:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: coral;
+}
+
+@keyframes padding-animation{
+    0%{
+        padding: 50px;
+    }
+    50%{
+        padding: 60px;
+        background-color: #f08080;
+    }
+    100%{
+        padding: 50px;
+    }
+}
+
+/*Estilos responsivos*/
+@media screen and (max-width: 768px){
+    .padding-example{
+        padding: 30px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .padding-example{
+        padding: 20px;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+}

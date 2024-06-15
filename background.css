@@ -1,0 +1,8 @@
+.background-example{
+    background-color: lightblue;
+    background-image: url('path/your/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
