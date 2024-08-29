@@ -3,57 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Consulta de Países</title>
+    <title>Agencia de Marketing</title>
+    <style>
+        body 
+        {margin: 40px;
+         border-width:1px;
+         border-color:blue;
+         border-style:solid;
+         text-align: left;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Consulta de Países</h1>
+        <h1>Agencia de Marketig digital</h1>
     </header>
     <main>
-        <form id="countryForm">
-            <label for="countryInput">Ingrese el nombre de un país:</label>
-            <input type="text" id="countryInput" name="countryInput" required autocomplete="off">
-            <ul id="suggestions" class="suggestions"></ul>
-            <button type="submit">Buscar</button>
-        </form>
-        <div id="results">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Bandera</th>
-                        <th>Nombre</th>
-                        <th>Capital</th>
-                        <th>Región</th>
-                        <th>Población</th>
-                    </tr>
-                </thead>
-                <tbody id="resultsBody">
-                </tbody>
-            </table>
-        </div>
+        <nav>
+            <a href="index.html">Index -</a>
+            <a href="nosotros.html">Nosotros -</a>
+            <a href="servicios.html">Servicios -</a>
+            <a href="contacto.html">Contacto -</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <hr>
+        <img src="img/portada.jpg" alt="Portada" width="1000" height="1000">
+        <hr>
     </main>
-    <script src="script.js"></script>
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyDtsVEQVUw1DJ6caEUxAh76eRZTuFOWc7A",
-          authDomain: "dota-2-52654.firebaseapp.com",
-          projectId: "dota-2-52654",
-          storageBucket: "dota-2-52654.appspot.com",
-          messagingSenderId: "884655297651",
-          appId: "1:884655297651:web:bb3c8d5fe7e79cbf8e0606"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-      </script>
-      
+    <footer>
+        <h2>Redes Sociales</h2>
+        <div>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <img src="images.jpg" alt="Facebook" width="180" height="80">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagram.webp" alt="instagram" width="180" height="80">
+            </a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank">
+                <img src="youtube.png" alt="Youtube" width="180" height="80">
+            </a>
+            <a href="https://x.com/?lang=es&mx=2" target="_blank">
+                <img src="twitter.avif" alt="twitter" width="180" height="80">
+            </a>
+        </div>
+        <h3>Copyright</h3>
+        <a href="sugerencias.html">Sugerencias</a>
+    </footer>
 </body>
 </html>
